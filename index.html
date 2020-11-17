@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- <script src="./parallax.js"></script> -->
+    <!-- <script src="./script.js"></script> -->
+
     <title>Document</title>
 </head>
 <body>
-    
+
+    <div class="background">
+      <div id="scene" class="scene">
+        <img data-depth="0.9" class="scene1" src="images/a.png">
+        <img data-depth="0.6" class="scene2" src="images/b.png">
+        <img data-depth="0.8" class="scene3" src="images/c.png">
+        <img data-depth="0.3" class="scene4" src="images/d.png">
+        <img data-depth="0.5" class="scene5" src="images/e.png">
+      </div>
+    </div>
+
+   
+
+   
+
+      <script>
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene, {
+  relativeInput: true
+});
+	</script>
 </body>
 </html>
